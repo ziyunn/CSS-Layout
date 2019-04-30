@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css-layout practice1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <div class="small__nav">
+                <div class="account__links"><a href="#">Log in</a> Or <span class="account__emphasis-link"><a href="#">Register</a></span></div> 
+                <div class="account__links">
+                    <span class="account__link">
+                        Wishlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 25 25">
+                            <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z" /></svg>
+                    </span>
+                    <span class="account__link">
+                        My cart (0)
+                    </span>
+                </div>
+            </div>
+            <header class="header">
+                <h1 class="title">
+                    <span class="title__letter">H</span>
+                    <span class="title__letter">A</span>
+                    <span class="title__letter">L</span>
+                    <span class="title__letter">L</span>
+                    <span class="title__letter">O</span>
+                </h1>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item">Home</li>
+                        <span class="header__divider">x</span>
+                        <li class="header__list-item">Products</li>
+                        <span class="header__divider">x</span>
+                        <li class="header__list-item">Contact</li>
+                    </ul>
+                </nav>
+                <div class="header__breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__breadcrumb  on">All<span>/</span></li>
+                        <li class="breadcrumbs__breadcrumb">Something<span>/</span></li>
+                        <li class="breadcrumbs__breadcrumb">Else<span>/</span></li>
+                        <li class="breadcrumbs__breadcrumb">Special</li>
+                    </ul>
+                </div>
+            </header>
+            <main class="product">
+                <div class="product__photo"></div>
+                <div class="product__info">
+                    <header class="product__header">
+                        <h3 class="product__title">Summer item</h3>
+                        <span class="product__price">$108</span>
+                    </header>
+                    <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem neque doloribus tempora illum minus esse voluptates, iusto ratione est, nulla velit ea at laudantium sunt eaque officia, necessitatibus possimus dicta?</p>
+                    <div class="product__btns">
+                        <span class="product__btn">1</span>
+                        <span class="product__btn">Add to cart</span>
+                        <span class="product__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 25 25">
+                                <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z" /></svg>
+                        </span>
+                    </div>
+                </div>
+            </main>
+            <div class="product__featured">
+                <div class="product__featured-image"></div>
+                <p class="text-center">summer vacation <i class="fas fa-arrow-right"></i></p>
+            </div>
+            <div class="subscribe">
+                <div class="subscribe__title">subscribe</div>
+                <span>Subscribe today and get your first issue free!</span>
+                <div class="subscribe__form">
+                    <form action="/" id="userEmail" name="userEmail" method="post">
+                        <fieldset>
+                            <legend>Subscribe Form</legend>
+                            <input type="text" id="sUser" name="sUser" placeholder="Enter your email!">
+                            <button type="submit">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="sns text-center">
+                <span class="sns__btn"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span class="sns__btn"><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span class="sns__btn"><a href="#"><i class="fab fa-instagram"></i></a></span>
+            </div>
+            <footer class="text-center">copyright by all rights reserved</footer>
+        </div>
+    </div>
+</body>
+</html>

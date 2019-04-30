@@ -1,0 +1,201 @@
+:root {
+    --blurColor : rgb(68, 145, 209); 
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+html,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li{
+    list-style: none;
+}
+fieldset {
+    border:0;
+}
+legend {
+	position:absolute; 
+	width:0; 
+	height:0; 
+	font-size:0; 
+	line-height:0; 
+	overflow:hidden; 
+	visibility:hidden; 
+	text-indent:-5000px;
+}
+body {
+  background: url(https://i.pinimg.com/564x/0a/7b/f9/0a7bf95280dfb06f7fd0f2d37c2c8149.jpg);
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Cormorant Unicase', serif;
+  padding: 2%;
+  color: #4f4f4f;
+}
+.text-center {
+    text-align: center;
+}
+.wrapper {
+    background-color: white;
+}
+.wrapper .inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1%;
+}
+.small__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 100px;
+}
+.account__links a{
+    text-decoration: none;
+    color: #4f4f4f;
+}
+.account__links .account__emphasis-link a{
+    color: var(--blurColor);
+}
+.account__links .account__link {
+    padding: 0 0 0 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.header .title {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    grid-gap: 30px;
+    height: 90px;
+    margin-bottom: 150px;
+}
+.title .title__letter:nth-child(2),
+.title .title__letter:nth-child(4) {
+  align-self: end;
+}
+
+.header .header__nav .header__list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    place-items: center;
+}
+.header__list .header__list-item {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header__list .header__divider {
+    font-size: 10px;
+}
+.header .header__breadcrumbs {
+    margin-top: 30px;
+}
+.header__breadcrumbs .breadcrumbs__list {
+    display: flex;
+}
+.breadcrumbs__list .breadcrumbs__breadcrumb {
+    font-size: 12px;
+    font-style: italic;
+    color: #ccc;
+}
+.breadcrumbs__breadcrumb.on {
+    color: #4f4f4f;
+}
+.breadcrumbs__breadcrumb span {
+    color: #ccc;
+    padding: 0 20px;
+}
+.product {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    place-items: center;
+    font-style: italic;
+    padding: 0 10%
+}
+.product .product__photo {
+    background: url(https://i.pinimg.com/564x/e1/d5/49/e1d549c63b4eadbd7b4489633857293a.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 400px;
+}
+.product .product__header {
+    display: flex;
+    justify-content: space-between;
+}
+.product .product__description {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.product .product__btns .product__btn {
+    background: #eee;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+.product__featured {
+    padding: 100px 10% 100px;
+}
+.product__featured i {
+    font-size: 10px;
+    color: #ccc;
+    padding-left:10px;
+}
+.product__featured .product__featured-image {
+    background: url(https://i.pinimg.com/564x/4f/af/dc/4fafdcd82b8a29e773ba4db6fb5ad1e8.jpg);
+    background-size: cover;
+    background-position: 0px -90px;
+    width: 100%;
+    height: 300px;
+}
+.subscribe {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.subscribe .subscribe__title {
+    color: var(--blurColor);
+    font-size: 29px;
+    padding-bottom: 5px;
+}
+.subscribe form {
+    margin-top: 10px;
+}
+.subscribe form input[type=text] {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 15px;
+    padding:5px 15px;
+}
+.subscribe form button[type=submit] {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 15px;
+    font-weight: 100; 
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    color: #fff; 
+    border:0 none;
+    cursor:pointer;
+    padding:7px 15px;
+    margin-left:-5px;
+}
+.sns .sns__btn a {
+    font-size: 18px;
+    color: #ccc;
+    padding: 0 5px;
+}
+footer {
+    padding: 10px 0;
+}
