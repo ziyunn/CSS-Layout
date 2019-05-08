@@ -1,0 +1,131 @@
+:root {
+  --mainColor: #352a29;
+  --borderBottom: 3px solid #352a29;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+html,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li{
+    list-style: none;
+}
+fieldset {
+    border:0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Francois One', sans-serif;
+  color: var(--mainColor);
+  padding: 5%;
+}
+.text-center {
+    text-align: center;
+}
+.contents-font {
+    font-family: 'Just Another Hand', cursive;
+}
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.header .header__title {
+  font-size: 24px;
+}
+.header .header__title span,
+.header .header__subtitle span {
+  display: block;
+}
+.header .header__subtitle {
+  font-size: 62px;
+  text-transform: uppercase;
+  text-align: right;
+}
+/*content*/
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+}
+.content .content__sidebar {
+  grid-column: span 2;
+}
+.content .content__projects {
+  grid-column: span 3;
+}
+.box {
+  margin-bottom: 50px;
+}
+.box .box__title {
+  font-size: 20px;
+  border-bottom: var(--borderBottom);
+  margin-bottom: 10px;
+  padding-bottom:10px;
+}
+.box .box__text {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 1.2
+}
+.box__categories .box__category {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.box__categories .box__category--selected {
+  color: #ccc;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.project {
+  border-bottom: var(--borderBottom);
+  padding-bottom: 20px;
+}
+.project .project__image {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+.project .project__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.project .project__date,
+.project .project__location {
+  display: block;
+}
+.project .project__date {
+  font-weight: 300;
+}
+.project .project__location {
+  margin-bottom: 30px;
+}
+.project .project__intro {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
