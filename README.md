@@ -4,9 +4,9 @@
 
 **참고 : 브라우저 지원**
 
-- grid : [grid](https://caniuse.com/?search=grid)
+- [grid](https://caniuse.com/?search=grid)
 
-- flex : [flex](https://caniuse.com/?search=flex)
+- [flex](https://caniuse.com/?search=flex)
 
 # 목적
 CSS의 grid, flex 스터디 및 기록
