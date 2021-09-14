@@ -6,7 +6,9 @@
 CSS의 grid, flex 스터디 및 기록
 
 - **브라우저 지원**
+
     [grid][https://caniuse.com/?search=grid]
+
     [flex][https://caniuse.com/?search=flex]
 
 # 결과
