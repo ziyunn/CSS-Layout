@@ -1,0 +1,41 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.App {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   background-color: #eee; 
+}
+
+.App .AppGnb {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 3px 6px 2px rgb(0 0 0 / 10%);
+    z-index: 1000;
+}
+.App .AppBody {
+    display: flex;
+    padding-top: 150px;
+}
+
+.App .AppBody .AppSide {
+    position: fixed;
+    width: 230px;
+    height: 100vh;
+    top: 150px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+}
+
+.App .AppBody .AppContents {
+    width: calc(100% - 230px);
+    padding-left: 250px;
+    margin: 0 auto;
+}
